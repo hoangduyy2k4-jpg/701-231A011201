@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f8;
+    color: #222;
+}
+
+header {
+    background: #1769aa;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header a {
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #00000015;
+}
+
+.product-card h3 {
+    color: #1769aa;
+}
+
+#message {
+    color: #c62828;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+css
+/* Form đăng ký */
+#registerForm {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 24px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000015;
+}
+
+#registerForm label:not(.checkbox-label) {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+}
+
+#registerForm input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 18px 0;
+}
+
+#registerForm button {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    background: #1769aa;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#registerMessage {
+    font-weight: bold;
+}

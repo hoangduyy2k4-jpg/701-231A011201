@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng hồ đếm ngược</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>ĐỒNG HỒ ĐẾM NGƯỢC</h1>
+        <a href="index.html">Về trang chủ</a>
+    </header>
+
+    <main class="container">
+        <h2>Thời gian còn lại</h2>
+        <div id="countdown">00:00</div>
+
+        <label for="minutes">Nhập số phút:</label>
+        <input type="number" id="minutes" min="1" max="60" value="1">
+
+        <button id="startBtn">Bắt đầu</button>
+        <button id="resetBtn">Đặt lại</button>
+
+        <p id="timerMessage" role="status"></p>
+    </main>
+
+    <script src="js/countdown.js"></script>
+</body>
+</html>
